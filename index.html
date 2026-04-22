@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Indian Food Catalog</title>
+    <meta name="description" content="Indian Food Catalog" />
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre|Tenor+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+  </head>
+
+  <body>
+
+    <header class="main-header">
+      <h1 class="title">Indian Food Catalog</h1>
+    </header>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+
+      <div class="control-group">
+        <label>Filter Category</label>
+        <select id="filterSelect">
+          <option value="All">All Foods</option>
+          <option value="Main Course">Main Course</option>
+          <option value="Condiments">Condiments</option>
+          <option value="Sweets">Sweets</option>
+          <option value="AZ">Alphabetical (A - Z)</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label>Search Foods</label>
+        <input id="searchInput" type="text" placeholder="Search for a dish..." />
+      </div>
+
+    </div>
+
+    <!-- REMOVE RANDOM BUTTON -->
+    <button id="removeLastBtn" onclick="removeRandCard()">
+      Remove Random Dish
+    </button>
+    
+    <!-- CARDS -->
+    <div id="card-container"></div>
+
+    <!-- TEMPLATE -->
+    <div class="card" style="display:none">
+      <div class="card-content">
+        <h2></h2>
+        <img />
+        <ul></ul>
+      </div>
+    </div>
+
+  </body>
+</html>
